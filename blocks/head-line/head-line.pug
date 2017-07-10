@@ -1,0 +1,31 @@
+mixin head-line()
+  div.head-line
+    div.head-line__container
+      div.window-request
+        div.window-request__header Заявка
+        textarea(class="window-request__input", placeholder="Напишите заявку")
+        div.window-request__btn 
+          div.window-request__btn-send Отправить
+          div.window-request__btn-close Отмена
+      div.head-line__menu-hamburger
+        img(src='/img/ham-menu.png')
+      div.head-line__side_menu
+        div.head-line__side_menu-btn(onclick="$.fn.fullpage.moveTo('main')") Главная
+        div.head-line__side_menu-btn(onclick="$.fn.fullpage.moveTo('projects')") Портфолио
+        div.head-line__side_menu-btn(onclick="$.fn.fullpage.moveTo('advantages')")  Преимущества
+        div.head-line__side_menu-btn(onclick="$.fn.fullpage.moveTo('feed-back')")  Схема Работы
+        div.head-line__side_menu-btn(onclick="$.fn.fullpage.moveTo('feed-back')")  Отзывы
+        div.head-line__side_menu-btn(onclick="$.fn.fullpage.moveTo('feed-back')")  Контакты
+      div.head-line__logo
+        img(src="/img/Layer_1.png")
+      div.head-line__menu
+        div.head-line__btn(onclick="$.fn.fullpage.moveTo('main')") Главная
+        div.head-line__btn(onclick="$.fn.fullpage.moveTo('projects')") Портфолио
+        div.head-line__btn(onclick="$.fn.fullpage.moveTo('advantages')")  Преимущества
+        div.head-line__btn(onclick="$.fn.fullpage.moveTo('feed-back')")  Схема Работы
+        div.head-line__btn(onclick="$.fn.fullpage.moveTo('feed-back')")  Отзывы
+        div.head-line__btn(onclick="$.fn.fullpage.moveTo('feed-back')")  Контакты
+      div.head-line__contacts
+        div.head-line__contacts-first +375 (29) 123-45-67
+        div.head-line__contacts-second +375 (33) 123-45-67
+      div.head-line__btn-request Оформить заявку

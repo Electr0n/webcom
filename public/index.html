@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+<html lang="ru">
+  <head>
+    <title>Webcom</title>
+    <meta charset="utf-8">
+    <meta content="Skorodumov Eugene" name="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+  </head>
+  <body>
+    <div class="head-line">
+      <div class="head-line__container">
+        <div class="window-request">
+          <div class="window-request__header">Заявка</div>
+          <textarea class="window-request__input" placeholder="Напишите заявку"></textarea>
+          <div class="window-request__btn"> 
+            <div class="window-request__btn-send">Отправить</div>
+            <div class="window-request__btn-close">Отмена</div>
+          </div>
+        </div>
+        <div class="head-line__menu-hamburger"><img src="/img/ham-menu.png"></div>
+        <div class="head-line__side_menu">
+          <div class="head-line__side_menu-btn" onclick="$.fn.fullpage.moveTo('main')">Главная</div>
+          <div class="head-line__side_menu-btn" onclick="$.fn.fullpage.moveTo('projects')">Портфолио</div>
+          <div class="head-line__side_menu-btn" onclick="$.fn.fullpage.moveTo('advantages')"> Преимущества</div>
+          <div class="head-line__side_menu-btn" onclick="$.fn.fullpage.moveTo('feed-back')"> Схема Работы</div>
+          <div class="head-line__side_menu-btn" onclick="$.fn.fullpage.moveTo('feed-back')"> Отзывы</div>
+          <div class="head-line__side_menu-btn" onclick="$.fn.fullpage.moveTo('feed-back')"> Контакты</div>
+        </div>
+        <div class="head-line__logo"><img src="/img/Layer_1.png"></div>
+        <div class="head-line__menu">
+          <div class="head-line__btn" onclick="$.fn.fullpage.moveTo('main')">Главная</div>
+          <div class="head-line__btn" onclick="$.fn.fullpage.moveTo('projects')">Портфолио</div>
+          <div class="head-line__btn" onclick="$.fn.fullpage.moveTo('advantages')"> Преимущества</div>
+          <div class="head-line__btn" onclick="$.fn.fullpage.moveTo('feed-back')"> Схема Работы</div>
+          <div class="head-line__btn" onclick="$.fn.fullpage.moveTo('feed-back')"> Отзывы</div>
+          <div class="head-line__btn" onclick="$.fn.fullpage.moveTo('feed-back')"> Контакты</div>
+        </div>
+        <div class="head-line__contacts">
+          <div class="head-line__contacts-first">+375 (29) 123-45-67</div>
+          <div class="head-line__contacts-second">+375 (33) 123-45-67</div>
+        </div>
+        <div class="head-line__btn-request">Оформить заявку</div>
+      </div>
+    </div>
+    <div id="fullpage">
+      <div class="section">
+        <div class="slideshow__container">
+          <div class="slideshow__control-left"><img src="/img/chevron6.png"></div>
+          <div class="slideshow__content">
+            <div class="slideshow__content-top">
+              <div class="slideshow__header">Главный заголовок</div>
+              <div class="slideshow__divider">
+                <hr><img src="/img/Rectangle_1.png">
+                <hr>
+              </div>
+              <div class="slideshow__text">
+                <div class="slideshow__item">
+                   Lorem Ipsum is simply dummy text of the printing and typesetting 
+                  ndustry. Lorem Ipsum has been the industry's standard dummy text 
+                  ever since the 1500s, when an unknown printer took a galley of type 
+                  and scrambled it to make a type specimen book. 
+                </div>
+                <div class="slideshow__item">
+                   There are many variations of passages of Lorem Ipsum available, but 
+                  he majority have suffered alteration in some form, by injected 
+                  humour, or randomised words which don't look even slightly 
+                  believable. If you are going to use a passage of Lorem Ipsum.
+                </div>
+                <div class="slideshow__item">
+                  It is a long established fact that a reader will be distracted by 
+                  the readable content of a page when looking at its layout. The 
+                  point of using Lorem Ipsum is that it has a more-or-less normal 
+                  distribution of letters, as opposed to using 'Content here.
+                </div>
+                <div class="slideshow__item">
+                  Fusce non urna ut leo semper ultrices in ut lectus. Duis fringilla 
+                  ante eu arcu eleifend ornare. Ut tincidunt pellentesque turpis at 
+                  consequat. Sed velit lorem, facilisis in augue sed, fringilla 
+                  tincidunt nulla. Neque porro quisquam est qui dolorem ipsum 
+                  quia dolor sit amet, consectetur, adipisci velit...
+                </div>
+                <div class="slideshow__item">
+                  Suspendisse ut justo scelerisque, convallis diam quis, aliquet 
+                  ipsum. Vestibulum at nisi purus. Donec eu nunc ligula. In hac 
+                  habitasse platea dictumst. In sit amet libero dignissim, sodales 
+                  urna non, pellentesque dolor. Lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit. 
+                </div>
+              </div>
+            </div>
+            <div class="slideshow__content-bottom">
+              <div class="slideshow__btn-request">Оформить заявку</div>
+              <div class="slideshow__dots">
+                <div class="slideshow__dots-element"></div>
+                <div class="slideshow__dots-element"></div>
+                <div class="slideshow__dots-element"></div>
+                <div class="slideshow__dots-element"></div>
+                <div class="slideshow__dots-element"></div>
+              </div>
+              <div class="slideshow__btn-down"><img src="/img/icon_arrow.png"></div>
+            </div>
+          </div>
+          <div class="slideshow__control-right"><img src="/img/chevron6.png"></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="portfolio">
+          <div class="portfolio__container">
+            <div class="portfolio__text">
+              <div class="portfolio__text-header">Наша работа</div>
+              <div class="separator"><img src="/img/separator.png"></div>
+              <div class="portfolio__text-desc">
+                It is a long established fact that a reader will be distracted by 
+                the readable content of a page when looking at its layout. If you 
+                are going to use a passage of Lorem Ipsum. Lorem ipsum dolor sit 
+                amet, consectetur adipiscing elit. 
+              </div>
+            </div>
+            <div class="portfolio__projects"><a href="#">
+                <div class="portfolio__img">
+                  <div class="portfolio__img-preview">
+                    <div class="portfolio__img-header">Название работы</div>
+                    <div class="portfolio__separator"><img src="/img/separator.png"></div>
+                    <div class="portfolio__img-desc">Описание работы</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="portfolio__img">
+                  <div class="portfolio__img-preview">
+                    <div class="portfolio__img-header">Название работы</div>
+                    <div class="portfolio__separator"><img src="/img/separator.png"></div>
+                    <div class="portfolio__img-desc">Описание работы</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="portfolio__img">
+                  <div class="portfolio__img-preview">
+                    <div class="portfolio__img-header">Название работы</div>
+                    <div class="portfolio__separator"><img src="/img/separator.png"></div>
+                    <div class="portfolio__img-desc">Описание работы</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="portfolio__img">
+                  <div class="portfolio__img-preview">
+                    <div class="portfolio__img-header">Название работы</div>
+                    <div class="portfolio__separator"><img src="/img/separator.png"></div>
+                    <div class="portfolio__img-desc">Описание работы</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="portfolio__img">
+                  <div class="portfolio__img-preview">
+                    <div class="portfolio__img-header">Название работы</div>
+                    <div class="portfolio__separator"><img src="/img/separator.png"></div>
+                    <div class="portfolio__img-desc">Описание работы</div>
+                  </div>
+                </div></a><a href="#">
+                <div class="portfolio__img">
+                  <div class="portfolio__img-preview">
+                    <div class="portfolio__img-header">Название работы</div>
+                    <div class="portfolio__separator"><img src="/img/separator.png"></div>
+                    <div class="portfolio__img-desc">Описание работы</div>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="advantages">
+          <div class="advantages__container">
+            <div class="advantages__text">
+              <div class="advantages__text-header">Почему мы</div>
+              <div class="separator"><img src="/img/separator.png"></div>
+              <div class="advantages__text-desc">
+                It is a long established fact that a reader will be distracted by 
+                the readable content of a page when looking at its layout. If you 
+                are going to use a passage of Lorem Ipsum. Lorem ipsum dolor sit 
+                amet, consectetur adipiscing elit. 
+              </div>
+            </div>
+            <div class="advantages__content">
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv1.png"></div>
+                <div class="advantages__item-header">Преимущество 1</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv2.png"></div>
+                <div class="advantages__item-header">Преимущество 2</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv3.png"></div>
+                <div class="advantages__item-header">Преимущество 3</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv4.png"></div>
+                <div class="advantages__item-header">Преимущество 4</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv5.png"></div>
+                <div class="advantages__item-header">Преимущество 5</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv6.png"></div>
+                <div class="advantages__item-header">Преимущество 6</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv7.png"></div>
+                <div class="advantages__item-header">Преимущество 7</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+              <div class="advantages__item">
+                <div class="advantages__item-img"><img src="/img/adv8.png"></div>
+                <div class="advantages__item-header">Преимущество 8</div>
+                <div class="advantages__item-desc">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  vel mi nec sapien fringilla sollicitudin.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="feedback__container">
+          <div class="feedback__text">
+            <div class="feedback__text-header">Оставьте отзыв</div>
+            <div class="separator"><img src="/img/separator.png"></div>
+            <div class="feedback__text-desc">
+               It is a long established fact that a reader will be distracted by 
+              the readable content of a page when looking at its layout. If you 
+              are going to use a passage of Lorem Ipsum. Lorem ipsum dolor sit 
+              amet, consectetur adipiscing elit.
+            </div>
+          </div>
+          <div class="feedback__contacts">
+            <div class="feedback__about">
+              <div class="feddback__about-item">
+                <div class="feedback__about-header">Наш адрес</div>
+                <div class="feedback__about-desc">г. Минск, ул. Скрыганова, 6А, 4 этаж</div>
+              </div>
+              <div class="feddback__about-item">
+                <div class="feedback__about-header">Звоните</div>
+                <div class="feedback__about-desc">+375 (29) 123-45-67, +375 (33) 123-45-67</div>
+              </div>
+              <div class="feddback__about-item">
+                <div class="feedback__about-header">Пишите</div>
+                <div class="feedback__about-desc">info@promo-webcom.by</div>
+              </div>
+            </div>
+            <div class="feedback__form">
+              <form>
+                <label class="feedback__form-label">Ваше имя</label>
+                <input class="feedback__form-input" type="text" name="name" placeholder="Иван Иванов">
+                <label class="feedback__form-label">E-mail</label>
+                <input class="feedback__form-input" type="text" name="site" placeholder="example@mysite.com">
+                <label class="feedback__form-label">Ваша должность</label>
+                <input class="feedback__form-input" type="text" name="job" placeholder="Должность">
+                <label class="feedback__form-label">Отзыв</label>
+                <textarea class="feedback__form-textarea" type="text" name="feedback" placeholder="Ваше сообщение" rows="5"></textarea>
+                <div class="feedback__photo">
+                  <div class="feedback__btn-add">+</div>
+                  <label class="feedback__form-label">Фото</label>
+                </div>
+                <div class="feedback__confirmation">
+                  <div class="feedback__form-kaptcha">
+                    <label class="feedback__form-label">Введите код с картинки</label>
+                    <input class="feedback__kaptcha-input" type="text" name="kaptcha"><img src="/img/kaptcha.png">
+                  </div>
+                  <input class="feedback__btn-submit" type="submit" value="Отправить">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fp-auto-height">
+        <div class="btn-up"></div>
+        <div class="footer__container">
+          <div class="footer__content">
+            <div class="footer__logo">
+              <div class="footer__logo-img"><img src="/img/Layer_1.png"></div>
+              <div class="separator"><img src="/img/separator.png"></div>
+              <div class="footer__logo-text">Дисклеймер компании</div>
+            </div>
+            <div class="footer__media">
+              <div class="footer__media-text">Мы в соцсетях</div>
+              <div class="separator"><img src="/img/separator.png"></div>
+              <div class="footer__media-icons"><img src="/img/inst.png"><img src="/img/twi.png"><img src="/img/fb.png"></div>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-header">Адрес</div>
+              <div class="separator"><img src="/img/separator.png"></div>
+              <div class="footer__contacts-text">г. Минск, ул. Скрыганова, 6А, 4 этаж</div>
+            </div>
+          </div>
+          <div class="footer__copyrights">Copyrights 2015 © Webcom Media</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

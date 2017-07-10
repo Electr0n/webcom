@@ -1,0 +1,30 @@
+include head/head
+include header/header
+include head-line/head-line
+include slider/slider
+include section-work/section-work
+include advantages/advantages
+include feedback/feedback
+include footer/footer
+
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+html(lang="ru")
+  block head
+    head
+      +head({
+        "title": "Webcom",
+        "author": "Skorodumov Eugene"
+      })
+    body
+      block header
+        +head-line()
+      div(id="fullpage")
+        block content
+          div content
+        block footer
+          +footer()
+      block scripts
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js")
+        script(src='/js/main.js')

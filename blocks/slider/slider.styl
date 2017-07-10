@@ -1,0 +1,139 @@
+.slideshow
+  font-family: "Myriad Pro"
+  &__container
+    container(center, wrap)
+    width: 100%
+    height: 100%
+    background-image: url("/img/bg.png")
+    background-repeat: repeatY
+    background-size: 100%
+    padding-top: 120px
+    z-index: -1
+  &__control
+    &-left, &-right
+      col(4)
+      display: flex
+      height: 100%
+      align-items: center
+      justify-content: center
+      img
+        width: 80px
+        height: 80px
+        cursor: pointer
+    &-left
+      transform: scaleX(-1)
+  &__content
+    col(18)
+    display: flex
+    flex-direction: column
+  &__content-top, &__content-bottom
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  &__content-top
+    justify-content: center
+  &__header
+    font-size: 41px
+    color: #28363d
+    margin-top: 20px
+    text-align: center
+    text-transform: uppercase
+    font-weight: bold
+  &__divider
+    display: flex
+    margin: 40px 0 40px 0
+    hr
+      background-color: #28363d
+      height: 2px
+      width: 400px
+    img
+      margin: 0 5px 0 5px
+  &__item
+    font-size: 18px
+    text-align: center
+    text-transform: uppercase
+    color: #28363d
+    transform: translateZ(0) scale(0)
+    transition-duration: .5s
+    transition-property: transform, opacity
+    &.hide
+      transform: translateZ(0) scale(0)
+      transition-duration: .5s
+      transition-property: transform, opacity
+    &.show
+      transform: translateZ(0) scale(1)
+  &__btn-request
+    width: 400px
+    height: 80px
+    border-radius: 10px
+    color: #fff
+    background-color: #ff8207
+    font-size: 16px
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.2
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    cursor: pointer
+    z-index: 2    
+  &__dots
+    text-align: center
+    display: flex
+    justify-content: center
+    z-index: 1
+    &-element
+      cursor: pointer
+      height: 18px
+      width: 18px
+      margin: 0 2px
+      background-color: #28363d
+      border-radius: 50%
+      z-index: 186
+      &.active
+        background-color: #ff8207
+  &__btn-down
+    display: flex
+    width: 54px
+    height: 54px
+    opacity: 0.6
+    border-radius: 50%
+    background-color: #28363d
+    cursor: pointer
+    margin: 0 auto
+    justify-content: center
+    align-items: center
+
+/* Tbalet */ 
+@media only screen and (min-width : $tablet-min) and (max-width : $tablet-max)
+  .slideshow
+    &__divider
+      margin: 0 0 20px 0
+    &__btn
+      &-request
+        margin-top: 50px
+        width: 250px
+        height: 50px
+    
+/* Mobile */
+@media only screen and (min-width : $mobile-min) and (max-width : $mobile-max)
+  .slideshow
+    &__header
+      margin-top: 40px
+      font-size: 22px
+    &__divider
+      margin: 0 0 20px 0
+    &__content
+      width: 70%
+    &__control
+      &-left, &-right
+        img
+          width: 30px
+          height: 30px
+    &__btn
+      &-request
+        margin-top: 50px
+        width: 200px
+        height: 50px

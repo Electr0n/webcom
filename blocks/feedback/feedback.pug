@@ -1,0 +1,42 @@
+mixin feedback
+  div.section
+    div.feedback__container
+      div.feedback__text
+        div.feedback__text-header Оставьте отзыв
+        div.separator
+          img(src="/img/separator.png")
+        div.feedback__text-desc 
+            |It is a long established fact that a reader will be distracted by 
+            |the readable content of a page when looking at its layout. If you 
+            |are going to use a passage of Lorem Ipsum. Lorem ipsum dolor sit 
+            |amet, consectetur adipiscing elit.
+      div.feedback__contacts
+        div.feedback__about
+          div.feddback__about-item
+            div.feedback__about-header Наш адрес
+            div.feedback__about-desc г. Минск, ул. Скрыганова, 6А, 4 этаж
+          div.feddback__about-item
+            div.feedback__about-header Звоните
+            div.feedback__about-desc +375 (29) 123-45-67, +375 (33) 123-45-67
+          div.feddback__about-item
+            div.feedback__about-header Пишите
+            div.feedback__about-desc info@promo-webcom.by
+        div.feedback__form
+          form
+            label(class="feedback__form-label") Ваше имя
+            input(class="feedback__form-input", type="text", name="name", placeholder="Иван Иванов")
+            label(class="feedback__form-label") E-mail
+            input(class="feedback__form-input", type="text", name="site", placeholder="example@mysite.com")
+            label(class="feedback__form-label") Ваша должность
+            input(class="feedback__form-input", type="text", name="job", placeholder="Должность")
+            label(class="feedback__form-label") Отзыв
+            textarea(class="feedback__form-textarea", type="text", name="feedback", placeholder="Ваше сообщение", rows="5")
+            div.feedback__photo
+              div.feedback__btn-add +
+              label(class="feedback__form-label") Фото
+            div.feedback__confirmation
+              div.feedback__form-kaptcha
+                label(class="feedback__form-label") Введите код с картинки
+                input(class="feedback__kaptcha-input", type="text", name="kaptcha")
+                img(src="/img/kaptcha.png")
+              input(class="feedback__btn-submit", type="submit" value="Отправить")

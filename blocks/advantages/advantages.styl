@@ -1,0 +1,73 @@
+.advantages
+  container()
+  height: 100%
+  font-family: "Myriad Pro"
+  justify-content: center
+  &__container
+    col(24)
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-header
+      font-size: 48px
+      color: #28363d
+      text-transform: uppercase
+      line-height: 0.917
+      text-align: center
+    &-desc
+      col(20)
+      display: flex
+      font-size: 18px
+      color: #8198a0
+      line-height: 2
+      text-align: center
+  &__content
+    display: flex
+    justify-content: space-between
+    flex-flow: wrap
+    min-height: 440px
+  &__item
+    width: 300px
+    height: 200px
+    display: flex
+    flex-flow: wrap
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    &-header
+      font-size: 16px
+      color: #28363d
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 1.2
+      text-align: center
+    &-desc
+      font-size: 16px
+      color: #8198a0
+      line-height: 1.875
+      display: flex
+      text-align: center
+.separator
+  display: flex
+  width: 100%
+  justify-content: center
+  margin: 10px 0
+
+/* Tablet */
+@media only screen and (min-width : $tablet-min) and (max-width : $tablet-max)
+  .advantages__content
+    justify-content: center
+/* Mobile */
+@media only screen and (min-width : $mobile-min) and (max-width : $mobile-max)
+  .advantages
+    &__text
+      &-desc
+        width: 240px
+  .advantages__content
+    display: flex
+    justify-content: center

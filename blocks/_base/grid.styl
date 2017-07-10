@@ -1,0 +1,31 @@
+/* Tablet - Mobile */
+$tabletMobile-min = 320px
+$tabletMobile-max = 1024px
+/* Tablet */
+$tablet-min = 768px
+$tablet-max = 1024px
+/* Mobile */
+$mobile-min = 320px
+$mobile-max = 767px
+/* Mobile iPhone 6 and 6 plus */
+$iphone6-min = 375px
+$iphone6-max = 736px
+/* Iphone 5 */
+$iphone5-min = 320px
+$iphone5-max = 568px
+
+$cols = 24
+$gutter = 20px
+
+$container
+  margin: 0 auto
+  box-sizing: border-box
+  display: flex
+  
+container($align = space-between, $wrap = wrap)
+  @extend $container
+  justify-content: $align
+  flex-flow: $wrap
+  
+col($num)
+  width: ((((100% / 24) / 4) * 3) * $num)
